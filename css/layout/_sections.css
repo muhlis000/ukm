@@ -1,0 +1,73 @@
+section {
+    padding-block: var(--space-12);
+}
+
+.hero-section {
+    padding-block: var(--space-20);
+    text-align: center;
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(ellipse at top, color-mix(in srgb, var(--primary-500) 8%, transparent), var(--bg));
+    opacity: 0.5;
+    z-index: 0;
+}
+
+html.dark .hero-section::before {
+    background: radial-gradient(ellipse at top, color-mix(in srgb, var(--primary-700) 15%, transparent), var(--bg));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: var(--space-6);
+    background: linear-gradient(90deg, var(--primary-500), var(--secondary-500));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: fadeIn 0.8s ease-out both;
+}
+
+@media (min-width: 768px) {
+    .hero-title {
+        font-size: 4.5rem;
+    }
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin-inline: auto;
+    margin-bottom: var(--space-10);
+    animation: fadeIn 0.8s ease-out 0.2s both;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: var(--space-12);
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.section-title p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-inline: auto;
+    margin-top: var(--space-2);
+}

@@ -1,0 +1,46 @@
+.card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    transition: all var(--transition);
+    position: relative;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: var(--radius-xl);
+    border: 1px solid transparent;
+    background: radial-gradient(400px circle at var(--mouse-x) var(--mouse-y), color-mix(in srgb, var(--primary-500) 15%, transparent), transparent);
+    opacity: 0;
+    transition: opacity var(--transition);
+    z-index: 1;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--border);
+}
+
+.card-content {
+    padding: var(--space-8);
+    position: relative;
+    z-index: 2;
+}
+
+.card-grid {
+    display: grid;
+    gap: var(--space-8);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
