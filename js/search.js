@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         try {
-            const response = await fetch(`/ukm-portfolio/api/search.php?q=${encodeURIComponent(query)}`);
+            const response = await fetch(`/api/search.php?q=${encodeURIComponent(query)}`);
             if (!response.ok) throw new Error('Network response was not ok');
             const results = await response.json();
             displayResults(results);
@@ -45,11 +45,11 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             results.forEach(ukm => {
                 const item = document.createElement('a');
-                item.href = `/ukm-portfolio/ukm/detail.php?id=${ukm.id_ukm}`;
+                item.href = `/ukm/detail.php?id=${ukm.id_ukm}`;
                 item.className = 'search-result-item';
 
                 item.innerHTML = `
-                    <img src="/ukm-portfolio/upload/logo/${ukm.logo}" alt="Logo ${ukm.nama_ukm}" onerror="this.onerror=null;this.src='https://placehold.co/40x40/e0e7ff/4f46e5?text=${ukm.nama_ukm.charAt(0)}';">
+                    <img src="/upload/logo/${ukm.logo}" alt="Logo ${ukm.nama_ukm}" onerror="this.onerror=null;this.src='https://placehold.co/40x40/e0e7ff/4f46e5?text=${ukm.nama_ukm.charAt(0)}';">
                     <div class="search-result-info">
                         <strong>${ukm.nama_ukm}</strong>
                         <span>${ukm.nama_kategori}</span>

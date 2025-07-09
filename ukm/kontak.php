@@ -18,14 +18,14 @@ function getYouTubeEmbedUrl($url) {
 }
 
 $id_ukm = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
-if (!$id_ukm) { header('Location: /ukm-portfolio/index.php'); exit; }
+if (!$id_ukm) { header('Location: /index.php'); exit; }
 
 // Ambil data UKM dan kontak
 try {
     $stmt_ukm_kontak = $pdo->prepare("SELECT u.nama_ukm, c.* FROM ukm u LEFT JOIN kontak c ON u.id_ukm = c.id_ukm WHERE u.id_ukm = ?");
     $stmt_ukm_kontak->execute([$id_ukm]);
     $data = $stmt_ukm_kontak->fetch();
-    if (!$data) { header('Location: /ukm-portfolio/index.php'); exit; }
+    if (!$data) { header('Location: /index.php'); exit; }
 } catch (PDOException $e) { die("Error mengambil data."); }
 
 $pageTitle = 'Kontak - ' . htmlspecialchars($data['nama_ukm']);

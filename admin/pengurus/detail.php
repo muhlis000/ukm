@@ -38,7 +38,7 @@ require_once __DIR__ . '/../../inc/header.php';
                 <?php else: ?>
                     <?php foreach ($pengurus_list as $pengurus): ?>
                     <tr>
-                        <td><img src="/ukm-portfolio/upload/pengurus/<?php echo htmlspecialchars($pengurus['foto']); ?>" alt="Foto" style="width: 50px; height: 50px; object-fit: cover; border-radius: 50%;"></td>
+                        <td><img src="/upload/pengurus/<?php echo htmlspecialchars($pengurus['foto']); ?>" alt="Foto" style="width: 50px; height: 50px; object-fit: cover; border-radius: 50%;"></td>
                         <td><?php echo htmlspecialchars($pengurus['nama_lengkap']); ?></td>
                         <td><?php echo htmlspecialchars($pengurus['jabatan']); ?></td>
                         <td>

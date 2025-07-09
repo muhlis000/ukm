@@ -35,7 +35,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
                     }
                 ?>
                 <li style="display: inline-block;">
-                    <a href="/ukm-portfolio/ukm/<?php echo $file; ?>?id=<?php echo htmlspecialchars($id_ukm); ?>" style="<?php echo $style; ?>">
+                    <a href="/ukm/<?php echo $file; ?>?id=<?php echo htmlspecialchars($id_ukm); ?>" style="<?php echo $style; ?>">
                         <?php echo htmlspecialchars($label); ?>
                     </a>
                 </li>

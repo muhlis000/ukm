@@ -121,7 +121,7 @@ $pageTitle = 'Admin Login';
                 <input type="password" id="password" name="password" required>
             </div>
             <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
-            <a href="/ukm-portfolio/index.php" class="btn btn-secondary" style="margin-top: 15px; width: 100%; border: 1px; align-text: center">Kembali ke Beranda</a>
+            <a href="/index.php" class="btn btn-secondary" style="margin-top: 15px; width: 100%; border: 1px; align-text: center">Kembali ke Beranda</a>
         </form>
     </div>
 </body>

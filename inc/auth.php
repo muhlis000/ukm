@@ -18,6 +18,6 @@ if (session_status() === PHP_SESSION_NONE) {
 if (!isset($_SESSION['admin_id'])) {
     // Jika tidak ada, berarti pengguna belum login.
     // Arahkan mereka ke halaman login dan hentikan eksekusi skrip.
-    header('Location: /ukm-portfolio/admin/login.php');
+    header('Location: /admin/login.php');
     exit;
 }

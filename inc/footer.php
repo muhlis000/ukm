@@ -24,9 +24,9 @@
                 <div class="footer-column" style="flex: 1; min-width: 150px;">
                     <h4 style="font-family: var(--font-heading); color: var(--text); font-size: 1rem; margin-bottom: var(--space-4);">Tautan Cepat</h4>
                     <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--space-2);">
-                        <li><a href="/ukm-portfolio/index.php" style="font-size: 0.9rem; text-decoration: none; color: var(--text-muted);">Beranda</a></li>
-                        <li><a href="/ukm-portfolio/index.php#kategori" style="font-size: 0.9rem; text-decoration: none; color: var(--text-muted);">Kategori</a></li>
-                        <li><a href="/ukm-portfolio/admin/login.php" style="font-size: 0.9rem; text-decoration: none; color: var(--text-muted);">Login Admin</a></li>
+                        <li><a href="/index.php" style="font-size: 0.9rem; text-decoration: none; color: var(--text-muted);">Beranda</a></li>
+                        <li><a href="/index.php#kategori" style="font-size: 0.9rem; text-decoration: none; color: var(--text-muted);">Kategori</a></li>
+                        <li><a href="/admin/login.php" style="font-size: 0.9rem; text-decoration: none; color: var(--text-muted);">Login Admin</a></li>
                     </ul>
                 </div>
 
@@ -45,11 +45,11 @@
     </footer>
 
     <!-- Muat skrip di sini -->
-    <script src="/ukm-portfolio/js/toggle.js"></script>
-    <script src="/ukm-portfolio/js/search.js"></script>
-    <script src="/ukm-portfolio/js/theme-toggle.js"></script>
-    <script src="/ukm-portfolio/js/card-glow.js"></script>
-    <script src="/ukm-portfolio/js/slider.js"></script>
+    <script src="/js/toggle.js"></script>
+    <script src="/js/search.js"></script>
+    <script src="/js/theme-toggle.js"></script>
+    <script src="/js/card-glow.js"></script>
+    <script src="/js/slider.js"></script>
 
 </body>
 </html>

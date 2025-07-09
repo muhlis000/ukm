@@ -14,7 +14,7 @@ require_once __DIR__ . '/../../inc/header.php';
 
 $id_ukm = filter_input(INPUT_GET, 'id_ukm', FILTER_VALIDATE_INT);
 if (!$id_ukm) {
-    header('Location: /ukm-portfolio/admin/ukm/list.php');
+    header('Location: /admin/ukm/list.php');
     exit;
 }
 

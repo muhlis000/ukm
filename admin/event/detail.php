@@ -38,7 +38,7 @@ require_once __DIR__ . '/../../inc/header.php';
                 <?php else: ?>
                     <?php foreach ($event_list as $event): ?>
                     <tr>
-                        <td><img src="/ukm-portfolio/upload/event/<?php echo htmlspecialchars($event['poster']); ?>" alt="Poster" style="width: 100px; height: auto; border-radius: var(--radius-lg);"></td>
+                        <td><img src="/upload/event/<?php echo htmlspecialchars($event['poster']); ?>" alt="Poster" style="width: 100px; height: auto; border-radius: var(--radius-lg);"></td>
                         <td><?php echo htmlspecialchars($event['nama_event']); ?></td>
                         <td><?php echo date('d M Y', strtotime($event['tanggal_event'])); ?></td>
                         <td>

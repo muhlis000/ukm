@@ -12,7 +12,7 @@ require_once __DIR__ . '/../inc/db.php';
 // Validasi ID UKM dari URL
 $id_ukm = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
 if (!$id_ukm) {
-    header('Location: /ukm-portfolio/index.php');
+    header('Location: /index.php');
     exit;
 }
 
@@ -23,7 +23,7 @@ try {
     $ukm = $stmt_ukm->fetch();
 
     if (!$ukm) {
-        header('Location: /ukm-portfolio/index.php');
+        header('Location: /index.php');
         exit;
     }
 
@@ -59,7 +59,7 @@ require_once __DIR__ . '/sub_nav.php';
                 <?php foreach ($pengurus_list as $pengurus): ?>
                     <div class="card" style="text-align: center;">
                         <div class="card-content">
-                            <img src="/ukm-portfolio/upload/pengurus/<?php echo htmlspecialchars($pengurus['foto']); ?>" alt="Foto <?php echo htmlspecialchars($pengurus['nama_lengkap']); ?>" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 15px auto; border: 3px solid var(--border-color);">
+                            <img src="/upload/pengurus/<?php echo htmlspecialchars($pengurus['foto']); ?>" alt="Foto <?php echo htmlspecialchars($pengurus['nama_lengkap']); ?>" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 15px auto; border: 3px solid var(--border-color);">
                             <h3 style="font-size: 1.2rem; color: var(--text-color); margin-bottom: 5px;"><?php echo htmlspecialchars($pengurus['nama_lengkap']); ?></h3>
                             <p style="color: var(--primary-color); font-weight: 600;"><?php echo htmlspecialchars($pengurus['jabatan']); ?></p>
                         </div>

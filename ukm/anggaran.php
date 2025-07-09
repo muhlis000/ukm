@@ -12,7 +12,7 @@ require_once __DIR__ . '/../inc/db.php';
 // Validasi ID UKM dari URL
 $id_ukm = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
 if (!$id_ukm) {
-    header('Location: /ukm-portfolio/index.php');
+    header('Location: /index.php');
     exit;
 }
 
@@ -23,7 +23,7 @@ try {
     $ukm = $stmt_ukm->fetch();
 
     if (!$ukm) {
-        header('Location: /ukm-portfolio/index.php');
+        header('Location: /index.php');
         exit;
     }
 

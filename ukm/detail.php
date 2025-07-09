@@ -13,7 +13,7 @@ require_once __DIR__ . '/../inc/db.php';
 // Validasi ID UKM dari URL
 $id_ukm = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
 if (!$id_ukm) {
-    header('Location: /ukm-portfolio/index.php');
+    header('Location: /index.php');
     exit;
 }
 
@@ -26,7 +26,7 @@ try {
 
     if (!$ukm) {
         // Jika UKM tidak ditemukan, kembali ke halaman utama
-        header('Location: /ukm-portfolio/index.php');
+        header('Location: /index.php');
         exit;
     }
 } catch (PDOException $e) {
@@ -41,7 +41,7 @@ require_once __DIR__ . '/../inc/header.php';
 
 <div class="ukm-profile-header" style="padding: 40px 0; background-color: var(--surface-color); text-align: center;">
     <div class="container">
-        <img src="/ukm-portfolio/upload/logo/<?php echo htmlspecialchars($ukm['logo']); ?>" alt="Logo <?php echo htmlspecialchars($ukm['nama_ukm']); ?>" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 20px auto; border: 4px solid var(--primary-color);" onerror="this.onerror=null;this.src='https://placehold.co/120x120/EBF4FF/1E40AF?text=Logo';">
+        <img src="/upload/logo/<?php echo htmlspecialchars($ukm['logo']); ?>" alt="Logo <?php echo htmlspecialchars($ukm['nama_ukm']); ?>" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 20px auto; border: 4px solid var(--primary-color);" onerror="this.onerror=null;this.src='https://placehold.co/120x120/EBF4FF/1E40AF?text=Logo';">
         <h1 style="font-size: 2.8rem; margin-bottom: 5px;"><?php echo htmlspecialchars($ukm['nama_ukm']); ?></h1>
         <p style="font-size: 1.1rem; color: var(--text-muted-color);"><?php echo htmlspecialchars($ukm['slogan']); // Asumsi ada kolom slogan ?></p>
     </div>

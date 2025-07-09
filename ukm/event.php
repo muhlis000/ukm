@@ -12,7 +12,7 @@ require_once __DIR__ . '/../inc/db.php';
 // Validasi ID UKM dari URL
 $id_ukm = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
 if (!$id_ukm) {
-    header('Location: /ukm-portfolio/index.php');
+    header('Location: /index.php');
     exit;
 }
 
@@ -23,7 +23,7 @@ try {
     $ukm = $stmt_ukm->fetch();
 
     if (!$ukm) {
-        header('Location: /ukm-portfolio/index.php');
+        header('Location: /index.php');
         exit;
     }
 
@@ -57,7 +57,7 @@ require_once __DIR__ . '/sub_nav.php';
             <div class="event-list" style="display: grid; gap: 30px;">
                 <?php foreach ($event_list as $event): ?>
                     <div class="card" style="display: flex; flex-direction: column; md:flex-direction: row; gap: 20px;">
-                        <img src="/ukm-portfolio/upload/event/<?php echo htmlspecialchars($event['poster']); ?>" alt="Poster <?php echo htmlspecialchars($event['nama_event']); ?>" style="width: 100%; max-width: 300px; height: auto; object-fit: cover;" onerror="this.onerror=null;this.src='https://placehold.co/300x400/EBF4FF/1E40AF?text=Poster';">
+                        <img src= /upload/event/<?php echo htmlspecialchars($event['poster']); ?>" alt="Poster <?php echo htmlspecialchars($event['nama_event']); ?>" style="width: 100%; max-width: 300px; height: auto; object-fit: cover;" onerror="this.onerror=null;this.src='https://placehold.co/300x400/EBF4FF/1E40AF?text=Poster';">
                         <div class="card-content">
                             <p style="color: var(--secondary-color); font-weight: 600;"><?php echo date('d F Y', strtotime($event['tanggal_event'])); ?></p>
                             <h2 style="font-size: 1.8rem; margin-top: 5px;"><?php echo htmlspecialchars($event['nama_event']); ?></h2>

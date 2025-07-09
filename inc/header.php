@@ -22,14 +22,14 @@ $isAdminLoggedIn = isset($_SESSION['admin_id']);
 // Mendefinisikan item menu berdasarkan status login.
 if ($isAdminLoggedIn) {
     $navItems = [
-        'Dashboard' => '/ukm-portfolio/admin/dashboard.php',
-        'Kategori' => '/ukm-portfolio/admin/kategori/list.php',
-        'UKM' => '/ukm-portfolio/admin/ukm/list.php'
+        'Dashboard' => '/admin/dashboard.php',
+        'Kategori' => '/admin/kategori/list.php',
+        'UKM' => '/admin/ukm/list.php'
     ];
 } else {
     $navItems = [
-        'Beranda' => '/ukm-portfolio/index.php',
-        'Kategori' => '/ukm-portfolio/index.php#kategori'
+        'Beranda' => '/index.php',
+        'Kategori' => '/index.php#kategori'
     ];
 
 if (session_status() === PHP_SESSION_NONE) { session_start(); }
@@ -58,13 +58,13 @@ $isAdminLoggedIn = isset($_SESSION['admin_id']);
     <!-- ============================================= -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" xintegrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="/ukm-portfolio/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <header class="main-header">
         <div class="container header-container">
-            <a href="<?php echo $isAdminLoggedIn ? '/ukm-portfolio/admin/dashboard.php' : '/ukm-portfolio/index.php'; ?>" class="site-logo">
-               <img src="/ukm-portfolio/img/logo-kampus.png" alt="Logo Kampus" onerror="this.onerror=null;this.src='https://placehold.co/40x40/EBF4FF/1E40AF?text=Logo';">  
+            <a href="<?php echo $isAdminLoggedIn ? '/admin/dashboard.php' : '/index.php'; ?>" class="site-logo">
+               <img src="/img/logo-kampus.png" alt="Logo Kampus" onerror="this.onerror=null;this.src='https://placehold.co/40x40/EBF4FF/1E40AF?text=Logo';">  
                <span class="site-title">Portofolio UKM<?php echo $isAdminLoggedIn ? ' <span class="admin-tag">(Admin)</span>' : ''; ?></span>
             </a>
             <div class="nav-wrapper">
@@ -75,9 +75,9 @@ $isAdminLoggedIn = isset($_SESSION['admin_id']);
                         <?php endforeach; ?>
                         
                         <?php if ($isAdminLoggedIn): ?>
-                            <li><a href="/ukm-portfolio/admin/logout.php" class="btn btn-secondary">Logout</a></li>
+                            <li><a href="/admin/logout.php" class="btn btn-secondary">Logout</a></li>
                         <?php else: ?>
-                            <li><a href="/ukm-portfolio/admin/login.php" class="btn btn-primary">Login</a></li>
+                            <li><a href="/admin/login.php" class="btn btn-primary">Login</a></li>
                         <?php endif; ?>
                     </ul>
                 </nav>

@@ -15,7 +15,7 @@ define('BASE_URL', 'http://localhost/ukm-portfolio');
 
 $host = 'localhost';      // Biasanya 'localhost' atau alamat IP server database.
 $dbname = 'projec15_ukm_portofolio'; // Nama database yang Anda buat.
-$user = 'projec15_root';           // Username untuk mengakses database.
+$user = 'projec15_root';             // Username untuk mengakses database.
 $pass = '@kaesquare123';               // Password untuk user database tersebut.
 $charset = 'utf8mb4';     // Charset yang direkomendasikan untuk mendukung berbagai karakter.
 

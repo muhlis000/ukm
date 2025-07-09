@@ -120,7 +120,7 @@ try {
 
             <div class="form-group">
                 <label for="logo">Ganti Logo (Opsional)</label>
-                <p>Logo saat ini: <img src="/ukm-portfolio/upload/logo/<?php echo htmlspecialchars($ukm['logo']); ?>" alt="Logo saat ini" style="width: 60px; height: 60px; vertical-align: middle; margin-left: 10px;"></p>
+                <p>Logo saat ini: <img src="/upload/logo/<?php echo htmlspecialchars($ukm['logo']); ?>" alt="Logo saat ini" style="width: 60px; height: 60px; vertical-align: middle; margin-left: 10px;"></p>
                 <input type="file" id="logo" name="logo" accept="image/*">
                 <small>Kosongkan jika tidak ingin mengganti logo.</small>
             </div>

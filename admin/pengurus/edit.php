@@ -14,7 +14,7 @@ require_once __DIR__ . '/../../inc/header.php';
 
 $id_pengurus = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
 if (!$id_pengurus) {
-    header('Location: /ukm-portfolio/admin/ukm/list.php'); exit;
+    header('Location: /admin/ukm/list.php'); exit;
 }
 
 require_once __DIR__ . '/../../inc/header.php';
@@ -67,7 +67,7 @@ try {
     $stmt->execute([$id_pengurus]);
     $pengurus = $stmt->fetch();
     if (!$pengurus) {
-        header('Location: /ukm-portfolio/admin/ukm/list.php'); exit;
+        header('Location: /admin/ukm/list.php'); exit;
     }
 } catch (PDOException $e) {
     die("Gagal mengambil data pengurus.");
@@ -96,7 +96,7 @@ try {
             </div>
             <div class="form-group">
                 <label for="foto">Ganti Foto (Opsional)</label>
-                <p><img src="/ukm-portfolio/upload/pengurus/<?php echo htmlspecialchars($pengurus['foto']); ?>" alt="Foto saat ini" style="width: 80px; height: 80px;"></p>
+                <p><img src="/upload/pengurus/<?php echo htmlspecialchars($pengurus['foto']); ?>" alt="Foto saat ini" style="width: 80px; height: 80px;"></p>
                 <input type="file" id="foto" name="foto" accept="image/*">
             </div>
             <div class="form-group">

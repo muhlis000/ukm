@@ -14,7 +14,7 @@ require_once __DIR__ . '/../../inc/header.php';
 
 $id_event = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
 if (!$id_event) {
-    header('Location: /ukm-portfolio/admin/ukm/list.php'); exit;
+    header('Location: /admin/ukm/list.php'); exit;
 }
 
 require_once __DIR__ . '/../../inc/header.php';
@@ -64,7 +64,7 @@ try {
     $stmt->execute([$id_event]);
     $event = $stmt->fetch();
     if (!$event) {
-        header('Location: /ukm-portfolio/admin/ukm/list.php'); exit;
+        header('Location: /admin/ukm/list.php'); exit;
     }
 } catch (PDOException $e) {
     die("Gagal mengambil data event.");
@@ -97,7 +97,7 @@ try {
             </div>
             <div class="form-group">
                 <label for="poster">Ganti Poster (Opsional)</label>
-                <p><img src="/ukm-portfolio/upload/event/<?php echo htmlspecialchars($event['poster']); ?>" alt="Poster saat ini" style="max-width: 150px;"></p>
+                <p><img src="/upload/event/<?php echo htmlspecialchars($event['poster']); ?>" alt="Poster saat ini" style="max-width: 150px;"></p>
                 <input type="file" id="poster" name="poster" accept="image/*">
             </div>
             <button type="submit" class="btn btn-primary">Update Event</button>

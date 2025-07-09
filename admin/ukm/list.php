@@ -61,7 +61,7 @@ try {
                     <?php foreach ($ukm_list as $ukm): ?>
                         <tr>
                             <td>
-                                <img src="/ukm-portfolio/upload/logo/<?php echo htmlspecialchars($ukm['logo']); ?>" alt="Logo" style="width: 50px; height: 50px; object-fit: cover; border-radius: 50%;" onerror="this.onerror=null;this.src='https://placehold.co/50x50/eee/ccc?text=N/A';">
+                                <img src="/upload/logo/<?php echo htmlspecialchars($ukm['logo']); ?>" alt="Logo" style="width: 50px; height: 50px; object-fit: cover; border-radius: 50%;" onerror="this.onerror=null;this.src='https://placehold.co/50x50/eee/ccc?text=N/A';">
                             </td>
                             <td><?php echo htmlspecialchars($ukm['nama_ukm']); ?></td>
                             <td><?php echo htmlspecialchars($ukm['nama_kategori'] ?? 'Tidak ada kategori'); ?></td>

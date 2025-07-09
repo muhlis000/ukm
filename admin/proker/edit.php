@@ -14,7 +14,7 @@ require_once __DIR__ . '/../../inc/header.php';
 
 $id_proker = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
 if (!$id_proker) {
-    header('Location: /ukm-portfolio/admin/ukm/list.php');
+    header('Location: /admin/ukm/list.php');
     exit;
 }
 
@@ -50,7 +50,7 @@ try {
     $stmt->execute([$id_proker]);
     $proker = $stmt->fetch();
     if (!$proker) {
-        header('Location: /ukm-portfolio/admin/ukm/list.php'); exit;
+        header('Location: /admin/ukm/list.php'); exit;
     }
 } catch (PDOException $e) {
     die("Gagal mengambil data proker.");

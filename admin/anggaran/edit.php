@@ -14,7 +14,7 @@ require_once __DIR__ . '/../../inc/header.php';
 
 $id_anggaran = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
 if (!$id_anggaran) {
-    header('Location: /ukm-portfolio/admin/ukm/list.php'); exit;
+    header('Location: /admin/ukm/list.php'); exit;
 }
 
 require_once __DIR__ . '/../../inc/header.php';
@@ -47,7 +47,7 @@ try {
     $stmt->execute([$id_anggaran]);
     $anggaran = $stmt->fetch();
     if (!$anggaran) {
-        header('Location: /ukm-portfolio/admin/ukm/list.php'); exit;
+        header('Location: /admin/ukm/list.php'); exit;
     }
 } catch (PDOException $e) {
     die("Gagal mengambil data anggaran.");

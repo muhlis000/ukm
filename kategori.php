@@ -65,7 +65,7 @@ require_once __DIR__ . '/inc/header.php';
                     <a href="ukm/detail.php?id=<?php echo $ukm['id_ukm']; ?>" class="card-link">
                         <div class="card">
                             <div class="card-content" style="text-align: center;">
-                                <img src="/ukm-portfolio/upload/logo/<?php echo htmlspecialchars($ukm['logo']); ?>" alt="Logo <?php echo htmlspecialchars($ukm['nama_ukm']); ?>" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 auto 15px auto; border: 3px solid var(--border-color);" onerror="this.onerror=null;this.src='https://placehold.co/80x80/EBF4FF/1E40AF?text=Logo';">
+                                <img src="/upload/logo/<?php echo htmlspecialchars($ukm['logo']); ?>" alt="Logo <?php echo htmlspecialchars($ukm['nama_ukm']); ?>" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 auto 15px auto; border: 3px solid var(--border-color);" onerror="this.onerror=null;this.src='https://placehold.co/80x80/EBF4FF/1E40AF?text=Logo';">
                                 <h3 style="font-size: 1.2rem; color: var(--text-color); margin: 0;"><?php echo htmlspecialchars($ukm['nama_ukm']); ?></h3>
                             </div>
                         </div>

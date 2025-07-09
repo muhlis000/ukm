@@ -95,7 +95,7 @@ require_once __DIR__ . '/inc/header.php';
                     <!-- Logo UKM jika ada -->
                     <?php if (!empty($item['logo'])): ?>
                     <div class="ukm-logo">
-                        <img src="/ukm-portfolio/upload/logo/<?php echo $item['logo']; ?>" 
+                        <img src="/upload/logo/<?php echo $item['logo']; ?>" 
                              alt="Logo <?php echo htmlspecialchars($item['nama_ukm']); ?>"
                              onerror="this.style.display='none'">
                     </div>
