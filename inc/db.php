@@ -14,9 +14,9 @@
 define('BASE_URL', 'http://localhost/ukm-portfolio');
 
 $host = 'localhost';      // Biasanya 'localhost' atau alamat IP server database.
-$dbname = 'ukm_portofolio'; // Nama database yang Anda buat.
-$user = 'root';           // Username untuk mengakses database.
-$pass = '';               // Password untuk user database tersebut.
+$dbname = 'projec15_ukm_portofolio'; // Nama database yang Anda buat.
+$user = 'projec15_root';           // Username untuk mengakses database.
+$pass = '@kaesquare123';               // Password untuk user database tersebut.
 $charset = 'utf8mb4';     // Charset yang direkomendasikan untuk mendukung berbagai karakter.
 
 // DSN (Data Source Name) mendefinisikan sumber data untuk koneksi.

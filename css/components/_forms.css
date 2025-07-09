@@ -16,17 +16,6 @@
     font-weight: 600;
 }
 
-.form-group input{
-    display: block;
-    width: 100%;
-    padding: var(--space-3);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
-    background-color: var(--surface);
-    color: var(--text);
-    transition: all var(--transition);
-}
-
 .form-group input,
 .form-group textarea,
 .form-group select {
