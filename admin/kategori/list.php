@@ -1,12 +1,4 @@
 <?php
-/**
- * File: list.php (Kategori - Revisi)
- * Deskripsi: Halaman utama manajemen kategori.
- * Perubahan: Sekarang menggunakan header dan footer global dari direktori root /inc/,
- * bukan lagi dari /admin/inc/. Ini memastikan konsistensi tampilan.
- * Semua gaya sekarang dimuat dari file css/style.css utama.
- */
-
 // Menampilkan semua error untuk debugging
 ini_set('display_errors', 1);
 error_reporting(E_ALL);

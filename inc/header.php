@@ -1,12 +1,4 @@
 <?php
-/**
- * File: header.php (Versi Disempurnakan)
- * Deskripsi: Header utama dan tunggal untuk seluruh website.
- * Peningkatan:
- * - Menggunakan array PHP untuk navigasi yang lebih mudah dikelola.
- * - Atribut aksesibilitas (ARIA) yang disempurnakan untuk navigasi mobile.
- * - Memuat font yang benar untuk tipografi estetik.
- */
 
 // Memulai session jika belum ada.
 if (session_status() === PHP_SESSION_NONE) {

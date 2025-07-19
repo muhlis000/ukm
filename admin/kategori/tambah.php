@@ -1,12 +1,4 @@
 <?php
-/**
- * File: tambah.php (Kategori)
- * Deskripsi: Menyediakan formulir untuk menambah kategori UKM baru.
- * Saat form disubmit (POST), skrip ini akan memvalidasi input dan menyimpannya
- * ke database menggunakan prepared statement untuk keamanan. Setelah berhasil,
- * admin akan dialihkan kembali ke halaman daftar kategori dengan pesan sukses.
- */
-
 $pageTitle = 'Tambah Kategori';
 // 1. Panggil script otentikasi
 require_once __DIR__ . '/../../inc/auth.php';

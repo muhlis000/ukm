@@ -1,10 +1,4 @@
 <?php
-/**
- * File: tambah.php (Proker)
- * Deskripsi: Menyediakan formulir untuk menambah proker baru.
- * ID UKM diambil dari URL untuk memastikan proker ditambahkan ke UKM yang benar.
- */
-
 $pageTitle = 'Tambah Program Kerja';
 // 1. Panggil script otentikasi
 require_once __DIR__ . '/../../inc/auth.php';

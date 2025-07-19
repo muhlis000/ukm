@@ -1,12 +1,4 @@
 <?php
-/**
- * File: event.php
- * Deskripsi: Halaman ini berfungsi sebagai kalender atau daftar acara dari UKM.
- * Ia menampilkan semua event, baik yang akan datang maupun yang sudah lewat,
- * lengkap dengan poster, tanggal, dan deskripsi singkat. Ini adalah cara yang bagus
- * untuk mempromosikan kegiatan dan menunjukkan keaktifan UKM.
- */
-
 require_once __DIR__ . '/../inc/db.php';
 
 // Validasi ID UKM dari URL

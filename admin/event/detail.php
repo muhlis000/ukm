@@ -1,11 +1,4 @@
 <?php
-// File BARU: admin/event/detail.php
-
-/**
- * File: detail.php (Event)
- * Deskripsi: Menampilkan daftar event untuk SATU UKM spesifik.
- */
-
 $pageTitle = 'Daftar Event';
 require_once __DIR__ . '/../../inc/auth.php';
 require_once __DIR__ . '/../../inc/db.php';

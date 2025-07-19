@@ -1,9 +1,4 @@
 <?php
-/**
- * File: edit.php (Event)
- * Deskripsi: Formulir untuk mengubah data event yang ada.
- */
-
 $pageTitle = 'Edit Event';
 // 1. Panggil script otentikasi
 require_once __DIR__ . '/../../inc/auth.php';

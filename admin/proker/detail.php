@@ -1,11 +1,4 @@
 <?php 
-// File BARU: admin/proker/detail.php
-
-/**
- * File: detail.php (Proker)
- * Deskripsi: Menampilkan riwayat proker untuk SATU UKM spesifik.
- */
-
 $pageTitle = 'Riwayat Program Kerja';
 
 require_once __DIR__ . '/../../inc/auth.php';

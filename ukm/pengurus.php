@@ -1,12 +1,4 @@
 <?php
-/**
- * File: pengurus.php
- * Deskripsi: Halaman ini menampilkan struktur kepengurusan dari sebuah UKM.
- * Ia mengambil data dari tabel 'pengurus' yang berelasi dengan ID UKM yang aktif.
- * Setiap pengurus akan ditampilkan dalam bentuk kartu profil yang berisi foto,
- * nama, dan jabatan, memberikan gambaran yang jelas tentang tim di balik UKM.
- */
-
 require_once __DIR__ . '/../inc/db.php';
 
 // Validasi ID UKM dari URL

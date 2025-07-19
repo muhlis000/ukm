@@ -1,15 +1,4 @@
 <?php
-// ===================================================================
-// KODE UNTUK MODUL: MANAJEMEN PENGURUS
-// ===================================================================
-
-// File: admin/pengurus/list.php (Logika Alur Baru)
-
-/**
- * File: list.php (Pengurus - Logika Alur Baru)
- * Deskripsi: Menampilkan daftar SEMUA UKM beserta jumlah pengurus mereka.
- */
-
 $pageTitle = 'Manajemen Pengurus';
 require_once __DIR__ . '/../../inc/auth.php';
 require_once __DIR__ . '/../../inc/db.php';

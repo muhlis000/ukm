@@ -1,12 +1,4 @@
 <?php
-/**
- * File: anggaran.php
- * Deskripsi: Menyajikan rincian anggaran UKM untuk transparansi. Halaman ini
- * menampilkan tabel yang berisi sumber dana, jumlah, dan deskripsi alokasi.
- * Ini membantu anggota dan pihak terkait untuk memahami kesehatan finansial
- * dan perencanaan keuangan dari UKM tersebut.
- */
-
 require_once __DIR__ . '/../inc/db.php';
 
 // Validasi ID UKM dari URL

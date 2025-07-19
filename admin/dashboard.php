@@ -1,13 +1,4 @@
 <?php
-/**
- * File: dashboard.php
- * Deskripsi: Halaman utama atau beranda dari panel admin.
- * Halaman ini adalah halaman pertama yang dilihat admin setelah login.
- * Ia menampilkan pesan selamat datang dan menyediakan link-link navigasi utama
- * ke berbagai modul manajemen (CRUD) seperti Kategori, UKM, Pengurus, dll.
- * Halaman ini dilindungi oleh auth.php.
- */
-
 // Langkah 1: Proteksi Halaman
 // File auth.php akan memeriksa apakah admin sudah login.
 // Jika belum, pengguna akan dialihkan ke halaman login.

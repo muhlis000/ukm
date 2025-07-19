@@ -1,9 +1,4 @@
 <?php
-/**
- * File: edit.php (Pengurus)
- * Deskripsi: Formulir untuk mengubah data pengurus, termasuk foto.
- */
-
 $pageTitle = 'Edit Pengurus';
 // 1. Panggil script otentikasi
 require_once __DIR__ . '/../../inc/auth.php';

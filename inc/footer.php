@@ -1,12 +1,5 @@
 <?php
-/**
- * File: footer.php
- * Deskripsi: File ini berfungsi sebagai bagian footer (kaki halaman) yang konsisten
- * untuk seluruh website. Ini adalah tempat yang tepat untuk menempatkan informasi
- * hak cipta, link-link tambahan, atau skrip JavaScript yang perlu dimuat di akhir
- * halaman untuk performa yang lebih baik. Memisahkan footer ke dalam file
- * tersendiri memastikan bahwa setiap perubahan hanya perlu dilakukan di satu tempat.
- */
+
 ?>
     </main> <!-- Penutup tag <main> yang dibuka di header.php -->
 

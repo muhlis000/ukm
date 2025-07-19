@@ -1,15 +1,4 @@
 <?php
-// ===================================================================
-// KODE UNTUK MODUL: MANAJEMEN EVENT
-// ===================================================================
-
-// File: admin/event/list.php (Logika Alur Baru)
-
-/**
- * File: list.php (Event - Logika Alur Baru)
- * Deskripsi: Menampilkan daftar SEMUA UKM beserta jumlah event mereka.
- */
-
 $pageTitle = 'Manajemen Event';
 require_once __DIR__ . '/../../inc/auth.php';
 require_once __DIR__ . '/../../inc/db.php';

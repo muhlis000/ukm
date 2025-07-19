@@ -1,13 +1,4 @@
 <?php
-/**
- * File: detail.php
- * Deskripsi: Halaman ini adalah profil utama dari sebuah Unit Kegiatan Mahasiswa (UKM).
- * Halaman ini mengambil ID UKM dari parameter URL, kemudian mengambil semua informasi
- * relevan dari database seperti nama, logo, deskripsi lengkap, visi, dan misi.
- * Halaman ini juga menyertakan sub-navigasi untuk memudahkan pengunjung menjelajahi
- * bagian lain dari profil UKM seperti program kerja, pengurus, dll.
- */
-
 require_once __DIR__ . '/../inc/db.php';
 
 // Validasi ID UKM dari URL

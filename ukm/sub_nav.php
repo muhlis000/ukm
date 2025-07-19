@@ -1,13 +1,4 @@
 <?php
-/**
- * File: sub_nav.php
- * Deskripsi: Komponen navigasi sekunder yang dapat digunakan kembali untuk semua halaman
- * di dalam direktori /ukm. Tujuannya adalah untuk menyediakan navigasi yang konsisten
- * antara halaman detail, program kerja, pengurus, dll., untuk satu UKM yang sama.
- * File ini secara dinamis membuat link dan menandai halaman yang sedang aktif.
- * Variabel $id_ukm dan $page_slug diharapkan sudah didefinisikan di file pemanggil.
- */
-
 // Daftar halaman yang ada di sub-navigasi
 $nav_items = [
     'detail.php' => 'Profil',

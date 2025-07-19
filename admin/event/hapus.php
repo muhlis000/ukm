@@ -1,11 +1,4 @@
 <?php
-/**
- * File: hapus.php (Event - Versi Diperbarui)
- * Deskripsi: Skrip untuk menghapus data event dan file posternya.
- * Peningkatan: Menambahkan logika untuk mengarahkan kembali (redirect) ke
- * halaman yang benar, baik itu halaman daftar umum atau halaman detail.
- */
-
 require_once __DIR__ . '/../../inc/auth.php';
 require_once __DIR__ . '/../../inc/db.php';
 

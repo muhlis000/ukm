@@ -1,11 +1,4 @@
 <?php
-/**
- * File: edit.php (Kontak - Versi Final dengan Video)
- * Deskripsi: Halaman utama untuk mengelola informasi kontak UKM.
- * File ini menangani baik pembuatan data kontak baru (jika belum ada)
- * maupun pembaruan data yang sudah ada, termasuk URL video profil.
- */
-
 $pageTitle = 'Manajemen Kontak';
 // 1. Panggil script otentikasi
 require_once __DIR__ . '/../../inc/auth.php';

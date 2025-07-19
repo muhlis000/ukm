@@ -1,13 +1,4 @@
 <?php
-// ===================================================================
-// KODE UNTUK FILE: admin/anggaran/hapus.php
-// ===================================================================
-
-/**
- * File: hapus.php (Anggaran)
- * Deskripsi: Skrip untuk menghapus data transaksi anggaran.
- */
-
 require_once __DIR__ . '/../../inc/auth.php';
 require_once __DIR__ . '/../../inc/db.php';
 

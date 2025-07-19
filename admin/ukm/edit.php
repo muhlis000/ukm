@@ -1,13 +1,4 @@
 <?php
-/**
- * File: edit.php (UKM)
- * Deskripsi: Formulir untuk mengedit data UKM yang sudah ada.
- * Logikanya lebih kompleks karena harus:
- * 1. Mengambil data saat ini untuk mengisi form.
- * 2. Menangani pembaruan data teks.
- * 3. Menangani pembaruan logo (jika ada file baru yang diunggah), termasuk
- * menghapus file logo lama dari server untuk menghemat ruang.
- */
 
 $pageTitle = 'Edit UKM';
 // 1. Panggil script otentikasi

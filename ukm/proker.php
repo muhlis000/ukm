@@ -1,12 +1,4 @@
 <?php
-/**
- * File: proker.php
- * Deskripsi: Halaman ini menampilkan daftar Program Kerja (Proker) dari sebuah UKM.
- * Sama seperti halaman detail, ia mengambil ID UKM dari URL. Kemudian, ia melakukan
- * query ke tabel 'proker' untuk mendapatkan semua data yang terkait dengan ID UKM tersebut
- * dan menampilkannya dalam format tabel yang mudah dibaca.
- */
-
 require_once __DIR__ . '/../inc/db.php';
 
 // Validasi ID UKM dari URL

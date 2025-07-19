@@ -1,13 +1,4 @@
 <?php
-/**
- * File: db.php
- * Deskripsi: File ini bertanggung jawab untuk membuat dan mengelola koneksi ke database.
- * Menggunakan PDO (PHP Data Objects) untuk koneksi yang lebih aman dan fleksibel, 
- * yang mendukung berbagai jenis database. Konfigurasi koneksi seperti nama host,
- * nama database, username, dan password didefinisikan di sini. Error handling
- * disertakan untuk menangkap dan menampilkan pesan jika koneksi gagal, 
- * yang sangat membantu saat proses debugging.
- */
 
 // Konfigurasi untuk koneksi ke database.
 // Ganti nilai-nilai ini sesuai dengan pengaturan server database Anda.

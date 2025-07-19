@@ -1,9 +1,4 @@
 <?php
-/**
- * File: edit.php (Proker)
- * Deskripsi: Formulir untuk mengubah data proker yang ada.
- */
-
 $pageTitle = 'Edit Program Kerja';
 // 1. Panggil script otentikasi
 require_once __DIR__ . '/../../inc/auth.php';

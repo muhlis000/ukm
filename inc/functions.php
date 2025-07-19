@@ -1,12 +1,4 @@
 <?php
-/**
- * File: functions.php
- * Deskripsi: File ini adalah kumpulan fungsi-fungsi pembantu (helper functions)
- * yang dapat dipanggil dari berbagai bagian di dalam website. Tujuannya adalah untuk
- * menampung logika yang sering digunakan kembali, sehingga kode menjadi lebih rapi,
- * mudah dibaca, dan mudah dikelola. Setiap fungsi di sini harus memiliki satu
- * tugas spesifik dan diberi komentar yang jelas.
- */
 
 /**
  * Fungsi untuk memotong teks (truncate) ke panjang maksimum yang ditentukan
@@ -19,12 +11,12 @@
 function truncateText(string $text, int $maxLength): string
 {
     /**
-     * Logika fungsi ini adalah sebagai berikut:
+     * Logika fungsi:
      * 1. Periksa apakah panjang teks asli lebih besar dari panjang maksimum.
      * 2. Jika tidak, kembalikan teks asli tanpa perubahan.
      * 3. Jika ya, potong teks menggunakan substr() hingga batas maksimum.
      * 4. Kemudian, cari posisi spasi terakhir dalam teks yang sudah dipotong
-     * menggunakan strrpos() untuk menghindari pemotongan di tengah kata.
+     *    menggunakan strrpos() untuk menghindari pemotongan di tengah kata.
      * 5. Jika spasi ditemukan, potong lagi teks hingga posisi spasi tersebut.
      * 6. Tambahkan "..." di akhir teks yang sudah dipotong untuk menandakan
      * bahwa teks tersebut tidak lengkap.

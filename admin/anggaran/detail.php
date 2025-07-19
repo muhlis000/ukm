@@ -1,13 +1,4 @@
 <?php 
-// ===================================================================
-// KODE UNTUK FILE BARU: admin/anggaran/detail.php
-// ===================================================================
-
-/**
- * File: detail.php (Anggaran)
- * Deskripsi: Menampilkan riwayat transaksi detail untuk SATU UKM spesifik.
- */
-
 $pageTitle = 'Riwayat Anggaran';
 
 require_once __DIR__ . '/../../inc/auth.php';

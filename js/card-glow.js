@@ -1,8 +1,3 @@
-/**
- * File: card-glow.js
- * Deskripsi: Menambahkan efek glow interaktif yang mengikuti kursor mouse
- * pada semua elemen dengan class '.card'.
- */
 document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.card');
 

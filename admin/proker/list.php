@@ -1,10 +1,4 @@
 <?php
-/**
- * File: list.php (Proker)
- * Deskripsi: Halaman utama untuk manajemen Program Kerja.
- * Halaman ini menampilkan daftar semua proker dari seluruh UKM.
- */
-
 $pageTitle = 'Manajemen Program Kerja';
 require_once __DIR__ . '/../../inc/auth.php';
 require_once __DIR__ . '/../../inc/db.php';

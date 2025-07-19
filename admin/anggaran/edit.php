@@ -1,9 +1,4 @@
 <?php
-/**
- * File: edit.php (Anggaran)
- * Deskripsi: Formulir untuk mengubah data transaksi anggaran yang ada.
- */
-
 $pageTitle = 'Edit Transaksi Anggaran';
 // 1. Panggil script otentikasi
 require_once __DIR__ . '/../../inc/auth.php';

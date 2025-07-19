@@ -1,12 +1,4 @@
 <?php
-/**
- * File: list.php (Kontak)
- * Deskripsi: Halaman utama untuk manajemen kontak.
- * Halaman ini menampilkan daftar SEMUA UKM, beserta ringkasan informasi
- * kontak mereka (seperti email dan telepon) yang diambil menggunakan LEFT JOIN.
- * Ini memungkinkan admin melihat status kontak setiap UKM dalam satu halaman
- * dan menyediakan tautan untuk mengedit detailnya.
- */
 
 $pageTitle = 'Manajemen Kontak';
 // 1. Panggil script otentikasi

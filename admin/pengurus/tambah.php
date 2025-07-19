@@ -1,9 +1,4 @@
 <?php
-/**
- * File: tambah.php (Pengurus)
- * Deskripsi: Menyediakan formulir untuk menambah pengurus baru, termasuk upload foto.
- */
-
 $pageTitle = 'Tambah Pengurus';
 // 1. Panggil script otentikasi
 require_once __DIR__ . '/../../inc/auth.php';

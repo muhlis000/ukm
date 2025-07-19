@@ -1,9 +1,4 @@
 <?php
-/**
- * File: index.php (Versi Layout Baru)
- * Deskripsi: Halaman utama dengan hero section, search bar, dan slider yang diposisikan ulang.
- */
-
 $pageTitle = 'Beranda';
 require_once __DIR__ . '/inc/db.php';
 

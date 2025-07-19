@@ -1,14 +1,7 @@
-/**
- * Deskripsi: Mengelola fungsionalitas buka-tutup menu navigasi mobile.
- * Kini juga memperbarui atribut `aria-expanded` pada tombol untuk
- * meningkatkan aksesibilitas bagi pengguna screen reader.
- */
-
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mainNav = document.getElementById('main-nav');
 
-    // Pastikan kedua elemen ada di halaman sebelum menambahkan event listener
     if (mobileMenuButton && mainNav) {
         mobileMenuButton.addEventListener('click', function() {
             // Cek status menu saat ini (terbuka atau tertutup)

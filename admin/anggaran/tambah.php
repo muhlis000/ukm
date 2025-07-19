@@ -1,9 +1,4 @@
 <?php
-/**
- * File: tambah.php (Anggaran)
- * Deskripsi: Menyediakan formulir untuk menambah transaksi anggaran baru.
- */
-
 $pageTitle = 'Tambah Transaksi Anggaran';
 // 1. Panggil script otentikasi
 require_once __DIR__ . '/../../inc/auth.php';

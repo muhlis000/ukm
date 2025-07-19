@@ -1,9 +1,4 @@
 <?php
-/**
- * File: tambah.php (Event)
- * Deskripsi: Menyediakan formulir untuk menambah event baru dengan upload poster.
- */
-
 $pageTitle = 'Tambah Event';
 // 1. Panggil script otentikasi
 require_once __DIR__ . '/../../inc/auth.php';

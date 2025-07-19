@@ -1,11 +1,4 @@
 <?php
-/**
- * File: tambah.php (UKM)
- * Deskripsi: Menyediakan formulir untuk menambah UKM baru.
- * File ini menangani input teks dan juga upload file untuk logo.
- * Menggunakan <form enctype="multipart/form-data"> yang esensial untuk upload file.
- * Melakukan validasi file dan membuat nama file unik untuk mencegah konflik.
- */
 
 $pageTitle = 'Tambah UKM';
 // 1. Panggil script otentikasi

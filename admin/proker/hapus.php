@@ -1,13 +1,4 @@
 <?php
-// ===================================================================
-// KODE UNTUK FILE: admin/proker/hapus.php
-// ===================================================================
-
-/**
- * File: hapus.php (Proker)
- * Deskripsi: Skrip untuk menghapus data program kerja.
- */
-
 require_once __DIR__ . '/../../inc/auth.php';
 require_once __DIR__ . '/../../inc/db.php';
 

@@ -1,11 +1,4 @@
 <?php
-/**
- * File: list.php (UKM)
- * Deskripsi: Halaman utama untuk manajemen UKM.
- * Menampilkan daftar semua UKM dengan beberapa informasi kunci seperti logo, nama,
- * dan kategori. Menggunakan JOIN SQL untuk mengambil nama kategori dari tabel
- * kategori_ukm, membuat tampilan lebih informatif bagi admin.
- */
 
 $pageTitle = 'Manajemen UKM';
 // 1. Panggil script otentikasi

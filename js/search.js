@@ -1,7 +1,3 @@
-/**
- * File: search.js
- * Deskripsi: Mengelola fungsionalitas live search dengan struktur HTML dan kelas yang benar.
- */
 document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('search-input');
     const searchResultsContainer = document.getElementById('search-results');

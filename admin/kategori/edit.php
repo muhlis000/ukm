@@ -1,12 +1,4 @@
 <?php
-/**
- * File: edit.php (Kategori)
- * Deskripsi: Menyediakan formulir untuk mengedit data kategori yang ada.
- * Pertama, ia mengambil data kategori saat ini berdasarkan ID dari URL
- * untuk mengisi formulir. Saat form disubmit (POST), ia akan memperbarui
- * data di database.
- */
-
 $pageTitle = 'Edit Kategori';
 // 1. Panggil script otentikasi
 require_once __DIR__ . '/../../inc/auth.php';

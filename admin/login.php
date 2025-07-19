@@ -1,14 +1,4 @@
 <?php
-/**
- * File: login.php
- * Deskripsi: Halaman login untuk administrator.
- * File ini memiliki dua fungsi utama:
- * 1. Menampilkan form login jika diakses melalui metode GET.
- * 2. Memproses data login yang dikirim melalui metode POST.
- * Saat memproses, ia akan memverifikasi username dan password (yang sudah di-hash)
- * dengan data di database. Jika berhasil, ia akan membuat session untuk admin
- * dan mengarahkannya ke halaman dashboard. Jika gagal, pesan error akan ditampilkan.
- */
 
 session_start();
 

@@ -1,14 +1,4 @@
 <?php 
-// ===================================================================
-// KODE UNTUK FILE: admin/anggaran/list.php (Logika Baru)
-// ===================================================================
-
-/**
- * File: list.php (Anggaran - Logika Alur Baru)
- * Deskripsi: Menampilkan daftar SEMUA UKM beserta total saldo mereka.
- * Halaman ini menjadi pusat untuk memilih UKM yang akan dikelola anggarannya.
- */
-
 $pageTitle = 'Manajemen Anggaran';
 
 require_once __DIR__ . '/../../inc/auth.php';

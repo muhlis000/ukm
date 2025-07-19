@@ -1,14 +1,4 @@
 <?php
-/**
- * File: kategori.php
- * Deskripsi: Halaman ini menampilkan daftar sub-UKM dalam satu kategori tertentu.
- * Ia mengambil ID kategori dari parameter URL (misal: kategori.php?id=1).
- * Berdasarkan ID tersebut, file ini akan:
- * 1. Mengambil data detail kategori (nama, deskripsi).
- * 2. Mengambil semua UKM yang termasuk dalam kategori tersebut.
- * 3. Menampilkan informasi di atas ke pengguna dengan layout yang rapi.
- */
-
 require_once __DIR__ . '/inc/db.php';
 
 // Validasi parameter ID dari URL. Harus berupa angka.

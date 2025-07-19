@@ -1,8 +1,4 @@
 <?php
-/**
- * File: kontak.php (Halaman Publik - Dengan Layout Baru)
- * Deskripsi: Menampilkan video profil dan detail kontak secara berdampingan.
- */
 require_once __DIR__ . '/../inc/db.php';
 
 // Fungsi helper untuk mengekstrak ID Video YouTube dari URL

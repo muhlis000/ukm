@@ -1,13 +1,4 @@
 <?php
-// ===================================================================
-// KODE UNTUK FILE: admin/pengurus/hapus.php
-// ===================================================================
-
-/**
- * File: hapus.php (Pengurus)
- * Deskripsi: Skrip untuk menghapus data pengurus dan file fotonya.
- */
-
 require_once __DIR__ . '/../../inc/auth.php';
 require_once __DIR__ . '/../../inc/db.php';
 
