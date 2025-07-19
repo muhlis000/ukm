@@ -71,3 +71,24 @@ html.dark .hero-section::before {
     margin-inline: auto;
     margin-top: var(--space-2);
 }
+
+.page-title-section {
+    padding: var(--space-10) 0;
+    background-color: var(--surface-variant);
+    border-bottom: 1px solid var(--border);
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* Kolom video lebih besar */
+    gap: var(--space-10);
+    align-items: start;
+}
+
+@media (max-width: 992px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+        /* Tumpuk di layar lebih kecil */
+    }
+}

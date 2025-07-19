@@ -1,3 +1,9 @@
+/*
+ * File: _admin.css
+ * Deskripsi: Gaya khusus untuk panel admin.
+ * Perbaikan: Menambahkan gaya dark mode untuk tabel.
+ */
+
 .admin-main-content {
     padding-block: var(--space-10);
     background-color: var(--bg);
@@ -10,10 +16,18 @@
     color: var(--text);
 }
 
+.table-container {
+    overflow-x: auto;
+}
+
 .table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
+    background-color: var(--surface);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
 }
 
 .table th,
@@ -31,8 +45,32 @@
     letter-spacing: 0.5px;
 }
 
+.table tbody tr {
+    transition: background-color var(--transition);
+}
+
 .table tbody tr:hover {
     background-color: var(--surface-variant);
+}
+
+.table tfoot {
+    font-weight: bold;
+    background-color: var(--surface-variant);
+}
+
+html.dark .table {
+    background-color: var(--surface);
+    border-color: var(--border);
+}
+
+html.dark .table th,
+html.dark .table tfoot {
+    background-color: var(--surface-variant);
+    border-color: var(--border);
+}
+
+html.dark .table tbody tr:hover {
+    background-color: color-mix(in srgb, var(--surface-variant) 50%, transparent);
 }
 
 .flash-message {
